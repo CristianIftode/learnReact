@@ -5,6 +5,26 @@ import EmployersList from '../employers-list/employers-list';
 import EmployeesAddForm from '../employers-add-form/employers-add-form';
 import './app.css';
 
+const datasalar = [
+    {
+        name: "John C.",
+        salary: 800,
+        increase: true,
+        id: 1
+    },
+    {
+        name: "Alex M.",
+        salary: 4000,
+        increase: true,
+        id: 2
+    },
+    {
+        name: "Carl W.",
+        salary: 5000,
+        increase: false,
+        id: 3
+    },
+]
 
 
 function App(){
@@ -17,12 +37,15 @@ function App(){
                 <AppFilter />
             </div>
 
-        <EmployersList />
+        <EmployersList data={datasalar}/>
 
         <EmployeesAddForm />
         </div>
     );
 }
+
+
+
 
 
 export default App;
