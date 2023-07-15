@@ -5,7 +5,7 @@ import './employers-list.css'
 
 const EmployersList = ({data}) =>{
 
-   const personear = data.map(item => {
+   const elements = data.map(item => {
         const {id, ...itemProps} = item
         return(
         <Employserslistitem key={id} {...itemProps}/>
@@ -14,7 +14,7 @@ const EmployersList = ({data}) =>{
 
     return(
         <ul className="app-list list-group">
-            {personear}
+            {elements}
         </ul>
     )
 }

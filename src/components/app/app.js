@@ -15,7 +15,7 @@ const datasalar = [
     {
         name: "Alex M.",
         salary: 4000,
-        increase: true,
+        increase: false,
         id: 2
     },
     {
